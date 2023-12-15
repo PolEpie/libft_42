@@ -77,8 +77,12 @@ so:
 
 clean:      
 		rm -f ${OBJS} ${CORE} *.o
+		make -C ./printf clean
+		make -C ./get_next_line clean
 
 fclean: clean
 		rm -f ${NAME}
+		make -C ./printf fclean
+		make -C ./get_next_line fclean
 
 re: fclean all
