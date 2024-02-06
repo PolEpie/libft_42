@@ -25,6 +25,7 @@ SRC		= 	./core/ft_isalnum.c \
 			./core/ft_atoi.c \
 			./core/ft_calloc.c \
 			./core/ft_strdup.c \
+			./core/ft_strndup.c \
 			./core/ft_substr.c \
 			./core/ft_strjoin.c \
 			./core/ft_strtrim.c \
@@ -66,8 +67,9 @@ printf: ${CORE}
 gnl: ${CORE}
 		make -C ./get_next_line all
 
-${NAME}: ${OBJS} core printf
+${NAME}: ${OBJS} core printf gnl
 		ar x ./libft_core.a
+		ar x ./get_next_line/libgnl.a
 		ar x ./printf/libftprintf.a
 		${AR} ${NAME} *.o
 		rm -f *.o

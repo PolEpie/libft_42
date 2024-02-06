@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
+/*   By: polepie <polepie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 14:44:05 by pepie             #+#    #+#             */
-/*   Updated: 2023/12/15 13:34:18 by pepie            ###   ########.fr       */
+/*   Updated: 2024/02/05 21:35:04 by polepie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ bool	save_on_buf(char *str, char *line, char **buf_save)
 		return (false);
 	tmp = NULL;
 	i = verify_contain_nl(str, true);
-	if (i < ft_strlen(str))
+	if (i < (int)ft_strlen(str))
 	{
 		ft_strncat(line, str, i + 1);
 		if (str[i + 1])
@@ -82,7 +82,7 @@ bool	save_on_buf(char *str, char *line, char **buf_save)
 	return (i);
 }
 
-char	*parse_line(t_gnl *gnl, char **buf_save)
+char	*parse_line_gnl(t_gnl *gnl, char **buf_save)
 {
 	int		len;
 	char	*line;
@@ -116,7 +116,7 @@ char	*get_next_line(int fd)
 		return (NULL);
 	bytes_read = 1;
 	if (verify_contain_nl(buf_save[fd], false))
-		return (parse_line(gnl, &buf_save[fd]));
+		return (parse_line_gnl(gnl, &buf_save[fd]));
 	while (bytes_read > 0)
 	{
 		bytes_read = read(fd, gnl->buf, BUFFER_SIZE);
@@ -130,7 +130,7 @@ char	*get_next_line(int fd)
 				break ;
 		}
 	}
-	return (parse_line(gnl, &buf_save[fd]));
+	return (parse_line_gnl(gnl, &buf_save[fd]));
 }
 
 /* int	main(void)

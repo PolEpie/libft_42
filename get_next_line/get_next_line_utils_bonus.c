@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
+/*   By: polepie <polepie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 15:06:18 by pepie             #+#    #+#             */
-/*   Updated: 2023/12/15 13:41:45 by pepie            ###   ########.fr       */
+/*   Updated: 2024/02/05 21:25:08 by polepie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ void	ft_lstadd_back_create(t_list **lst, char *new_content)
 	last->next = new;
 }
 
-int	ft_lstiter_sum(void *lst, int (*f)(char *))
+int	ft_lstiter_sum(void *lst, unsigned long (*f)(char *))
 {
 	int	i;
 

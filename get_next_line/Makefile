@@ -5,7 +5,7 @@ NAME	= libgnl.a
 SRC		= 	./get_next_line_bonus.c \
 			./get_next_line_utils_bonus.c
 OBJS	= ${SRC:.c=.o}
-HEAD	= ./includes/
+HEAD	= ./../includes/
 AR		= ar rcs
 RM		= rm -f
 
