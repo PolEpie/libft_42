@@ -6,7 +6,7 @@
 /*   By: polepie <polepie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 14:42:39 by pepie             #+#    #+#             */
-/*   Updated: 2024/02/05 21:25:22 by polepie          ###   ########.fr       */
+/*   Updated: 2024/03/06 14:56:29 by polepie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,11 @@
 # include <fcntl.h>
 # include <stdio.h>
 # include <stdbool.h>
-# include "libft.h"
+
+typedef struct s_list {
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 
 typedef struct s_gnl {
 	t_list		**list;
@@ -37,10 +41,10 @@ enum e_verif_nl {
 
 char	*get_next_line(int fd);
 
-void	ft_lstadd_back_create(t_list **lst, char *n);
-int		ft_lstiter_sum(void *lst, unsigned long  (*f)(char *));
+void	ft_lstadd_back_gnl(t_list **lst, char *n);
+int		ft_strlen(char *str);
+int		ft_lstiter(void *lst, int (*f)(char *), bool type);
 char	*ft_strndup(char *src, int nb);
 char	*ft_freeman(t_gnl *gnl, char *ret);
-int		init_gnl(t_gnl *gnl);
 
 #endif

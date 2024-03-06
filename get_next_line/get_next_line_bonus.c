@@ -6,7 +6,7 @@
 /*   By: polepie <polepie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 14:44:05 by pepie             #+#    #+#             */
-/*   Updated: 2024/02/05 21:35:04 by polepie          ###   ########.fr       */
+/*   Updated: 2024/03/06 14:56:35 by polepie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ bool	save_on_buf(char *str, char *line, char **buf_save)
 		return (false);
 	tmp = NULL;
 	i = verify_contain_nl(str, true);
-	if (i < (int)ft_strlen(str))
+	if (i < ft_strlen(str))
 	{
 		ft_strncat(line, str, i + 1);
 		if (str[i + 1])
@@ -92,7 +92,7 @@ char	*parse_line_gnl(t_gnl *gnl, char **buf_save)
 		return (ft_freeman(gnl, NULL));
 	len = ft_strlen(*buf_save);
 	if (*(gnl->list))
-		len += ft_lstiter_sum(*(gnl->list), &ft_strlen);
+		len += ft_lstiter(*(gnl->list), &ft_strlen, 0);
 	line = malloc(sizeof(char) * (len + 1));
 	if (!line)
 		return (NULL);
@@ -112,7 +112,7 @@ char	*get_next_line(int fd)
 	int				bytes_read;
 
 	gnl = malloc(sizeof(t_gnl));
-	if (!gnl || init_gnl(gnl))
+	if (!gnl || ft_lstiter(gnl, NULL, true))
 		return (NULL);
 	bytes_read = 1;
 	if (verify_contain_nl(buf_save[fd], false))
@@ -125,7 +125,7 @@ char	*get_next_line(int fd)
 		gnl->buf[bytes_read] = 0;
 		if (bytes_read > 0)
 		{
-			ft_lstadd_back_create(gnl->list, gnl->buf);
+			ft_lstadd_back_gnl(gnl->list, gnl->buf);
 			if (verify_contain_nl(gnl->buf, false))
 				break ;
 		}
