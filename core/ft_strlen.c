@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
+/*   By: polepie <polepie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 11:05:19 by pepie             #+#    #+#             */
-/*   Updated: 2023/11/07 11:33:45 by pepie            ###   ########.fr       */
+/*   Updated: 2024/03/06 13:59:29 by polepie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ unsigned long	ft_strlen(char *str)
 	int	len;
 
 	len = 0;
+    if (!str)
+        return (0);
 	while (str[len])
 		len++;
 	return (len);
