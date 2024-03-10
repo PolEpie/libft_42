@@ -6,7 +6,7 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 11:35:37 by pepie             #+#    #+#             */
-/*   Updated: 2023/12/15 13:52:46 by pepie            ###   ########.fr       */
+/*   Updated: 2023/11/24 13:51:22 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 # define FT_PRINTF_H
 
 # include "libft_core.h"
-# include "get_next_line_bonus.h"
 # include <stdarg.h>
 # include <stdio.h>
 # include <stdint.h>

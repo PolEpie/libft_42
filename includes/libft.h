@@ -14,7 +14,7 @@
 # define LIBFT_H
 
 # include "libft_core.h"
-# include "printf.h"
+# include "ft_printf.h"
 # include "get_next_line_bonus.h"
 
 #endif

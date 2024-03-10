@@ -14,6 +14,7 @@ SRC			= 	./src/ft_printf.c \
 				./src/flag_2_bonus.c
 OBJS		= ${SRC:.c=.o}
 HEAD		= ./includes/
+INCLUDE_LIBFT = ./../includes/
 AR			= ar rcs
 RM			= rm -f
 LIBFT_PATH  = ./../
@@ -21,7 +22,7 @@ LIBFT_PATH  = ./../
 all: ${NAME}
 
 .c.o:
-		${CC} ${CFLAGS} -c -I ${HEAD} $< -o ${<:.c=.o}
+		${CC} ${CFLAGS} -c -I ${HEAD} -I ${INCLUDE_LIBFT} $< -o ${<:.c=.o}
 
 $(NAME): $(OBJS)
 		cp $(LIBFT_PATH)libft_core.a ${NAME}
