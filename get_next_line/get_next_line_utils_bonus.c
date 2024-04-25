@@ -83,7 +83,7 @@ int	ft_lstiter(void *lst, int (*f)(char *), bool type)
 	}
 }
 
-int	ft_strlen(char *str)
+/* int	ft_strlen(char *str)
 {
 	int	i;
 
@@ -112,3 +112,4 @@ char	*ft_strndup(char *src, int nb)
 	dest[i] = '\0';
 	return (dest);
 }
+ */
