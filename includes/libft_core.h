@@ -6,7 +6,7 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 11:15:16 by pepie             #+#    #+#             */
-/*   Updated: 2023/12/15 13:50:22 by pepie            ###   ########.fr       */
+/*   Updated: 2024/04/30 14:52:19 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,9 @@ int				ft_memcmp(const void *pt1, const void *pt2, size_t size);
 unsigned int	ft_strncmp(char *s1, char *s2, unsigned int n);
 char			*ft_strnstr(char *str, char *to_find, size_t len);
 int				ft_atoi(const char *str);
+long			ft_atol(const char *str);
+
+int				ft_mathmin(int a, int b);
 
 void			*ft_calloc(size_t nitems, size_t size);
 char			*ft_strdup(const char *src);
@@ -67,6 +70,8 @@ void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char *str, int fd);
 void			ft_putendl_fd(char *str, int fd);
 void			ft_putnbr_fd(int n, int fd);
+int				ft_str_is_num(char str);
+int				ft_str_is_whitespace(char str);
 
 //Bonus
 t_list			*ft_lstnew(void *content);
