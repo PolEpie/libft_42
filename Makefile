@@ -24,6 +24,7 @@ SRC		= 	./core/ft_isalnum.c \
 			./core/ft_strnstr.c \
 			./core/ft_atoi.c \
 			./core/ft_math_min.c \
+			./core/ft_math_abs.c \
 			./core/ft_atol.c \
 			./core/ft_calloc.c \
 			./core/ft_strdup.c \

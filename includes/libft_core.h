@@ -6,7 +6,7 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 11:15:16 by pepie             #+#    #+#             */
-/*   Updated: 2024/04/30 14:52:19 by pepie            ###   ########.fr       */
+/*   Updated: 2024/05/01 10:43:49 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,7 @@ int				ft_atoi(const char *str);
 long			ft_atol(const char *str);
 
 int				ft_mathmin(int a, int b);
+int				ft_math_abs(int num);
 
 void			*ft_calloc(size_t nitems, size_t size);
 char			*ft_strdup(const char *src);

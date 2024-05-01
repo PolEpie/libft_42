@@ -1,39 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atol.c                                          :+:      :+:    :+:   */
+/*   ft_math_abs.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/10 18:49:16 by pepie             #+#    #+#             */
-/*   Updated: 2024/04/30 14:59:27 by pepie            ###   ########.fr       */
+/*   Created: 2024/05/01 10:43:27 by pepie             #+#    #+#             */
+/*   Updated: 2024/05/01 10:43:29 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-long	ft_atol(const char*str)
+int	ft_math_abs(int num)
 {
-	int		minus_count;
-	long	num;
-
-	num = 0;
-	minus_count = 0;
-	while (ft_str_is_whitespace(*str))
-	str++;
-	if (*str == '-' || *str == '+')
+	if (num < 0)
 	{
-		if (*str == '-')
-			minus_count++;
-		str++;
+		return (num * -1);
 	}
-	while (ft_str_is_num(*str))
-	{
-		num = num * 10;
-		num = num + *str - '0';
-		str++;
-	}
-	if (minus_count % 2 == 1)
-		num = num * -1;
 	return (num);
 }
