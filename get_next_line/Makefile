@@ -1,5 +1,5 @@
 CC		= cc
-CFLAGS	= -Wall -Wextra -Werror
+CFLAGS	= -Wall -Wextra -Werror -fPIE
 DIR		= srcs/
 NAME	= libgnl.a
 SRC		= 	./get_next_line_bonus.c \

@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_freesplit.c                                     :+:      :+:    :+:   */
+/*   ft_str_is_whitespace.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/01 11:04:11 by pepie             #+#    #+#             */
-/*   Updated: 2024/05/16 14:42:25 by pepie            ###   ########.fr       */
+/*   Created: 2024/05/07 11:56:21 by pepie             #+#    #+#             */
+/*   Updated: 2024/05/07 11:56:25 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	ft_freesplit(char **split)
+int	ft_str_is_whitespace(char str)
 {
-	int	i;
-
-	i = 0;
-	while (split[i])
-	{
-		free(split[i]);
-		i++;
-	}
+	if (str == ' ' || str == '\t' || str == '\n' || str == '\f')
+		return (1);
+	else if (str == '\v' || str == '\r')
+		return (1);
+	else
+		return (0);
 }

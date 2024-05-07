@@ -1,5 +1,5 @@
 CC		= cc
-CFLAGS	= -Wall -Wextra -Werror
+CFLAGS	= -Wall -Wextra -Werror -fPIE
 DIR		= srcs/
 NAME	= libft.a
 SRC		= 	./core/ft_isalnum.c \
@@ -25,7 +25,7 @@ SRC		= 	./core/ft_isalnum.c \
 			./core/ft_strnstr.c \
 			./core/ft_atoi.c \
 			./core/ft_freesplit.c \
-			./core/ft_math_min.c \
+			./core/ft_math.c \
 			./core/ft_math_abs.c \
 			./core/ft_atol.c \
 			./core/ft_calloc.c \
@@ -50,6 +50,7 @@ SRC		= 	./core/ft_isalnum.c \
 			./core/ft_lstclear_bonus.c \
 			./core/ft_lstiter_bonus.c \
 			./core/ft_lstmap_bonus.c \
+			./core/ft_str_is_whitespace.c \
 			./core/ft_atoi_base.c \
 			./core/ft_atol_base.c
 OBJS	= ${SRC:.c=.o}

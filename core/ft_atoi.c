@@ -6,7 +6,11 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 18:49:16 by pepie             #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2024/05/14 20:52:52 by pepie            ###   ########.fr       */
+=======
+/*   Updated: 2024/05/07 11:57:33 by pepie            ###   ########.fr       */
+>>>>>>> 6dc9f48 (Fix compile + Add atoi / atol base)
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +19,6 @@
 int	ft_str_is_num(char str)
 {
 	if (str >= '0' && str <= '9')
-		return (1);
-	else
-		return (0);
-}
-
-int	ft_str_is_whitespace(char str)
-{
-	if (str == ' ' || str == '\t' || str == '\n' || str == '\f')
-		return (1);
-	else if (str == '\v' || str == '\r')
 		return (1);
 	else
 		return (0);

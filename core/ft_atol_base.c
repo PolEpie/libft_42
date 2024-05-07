@@ -5,6 +5,7 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
+<<<<<<< HEAD
 /*   Created: 2024/05/14 20:46:50 by pepie             #+#    #+#             */
 /*   Updated: 2024/05/14 20:53:47 by pepie            ###   ########.fr       */
 /*                                                                            */
@@ -19,6 +20,10 @@
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 16:27:25 by pepie             #+#    #+#             */
 /*   Updated: 2023/09/13 19:08:05 by pepie            ###   ########.fr       */
+=======
+/*   Created: 2023/09/11 16:27:25 by pepie             #+#    #+#             */
+/*   Updated: 2024/05/07 11:59:06 by pepie            ###   ########.fr       */
+>>>>>>> 6dc9f48 (Fix compile + Add atoi / atol base)
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,11 +81,19 @@ long	atol_base(char*str, char*base, int max_base)
 	return (num);
 }
 
+<<<<<<< HEAD
 long ft_atol_base(char *str, char *base)
 {
 	int     minus_count;
 	int     max_base;
 	long	num;
+=======
+long	ft_atol_base(char*str, char*base)
+{
+	int		minus_count;
+	long	num;
+	int		max_base;
+>>>>>>> 6dc9f48 (Fix compile + Add atoi / atol base)
 
 	max_base = verify_base(base);
 	if (max_base == 0)
@@ -89,7 +102,11 @@ long ft_atol_base(char *str, char *base)
 	minus_count = 0;
 	while (ft_str_is_whitespace(*str))
 		str++;
+<<<<<<< HEAD
 	while (*str == '-' || *str == '+')
+=======
+	if (*str == '-' || *str == '+')
+>>>>>>> 6dc9f48 (Fix compile + Add atoi / atol base)
 	{
 		if (*str == '-')
 			minus_count++;
@@ -100,3 +117,19 @@ long ft_atol_base(char *str, char *base)
 		num = num * -1;
 	return (num);
 }
+<<<<<<< HEAD
+=======
+
+/* int	main(void)
+{
+	printf("42:%d\n", ft_atoi_base("2a", "0123456789abcdef"));
+	printf("-42:%d\n", ft_atoi_base("   --------+-2a", "0123456789abcdef"));
+	printf("42:%d\n", ft_atoi_base("   -+-2a", "0123456789abcdef"));
+	printf("0:%d\n", ft_atoi_base("   --------+- 2a", "0123456789abcdef"));
+	printf("0:%d\n", ft_atoi_base("   --------+-z", "0123456789abcdef"));
+	printf("0:%d\n", ft_atoi_base("   --------+-2a", ""));
+	printf("0:%d\n", ft_atoi_base("   --------+-2a", "0"));
+	printf("0:%d\n", ft_atoi_base("   --------+-2a", "+-0"));
+	printf("0:%d\n", ft_atoi_base("   --------+-2a", "\t01"));
+} */
+>>>>>>> 6dc9f48 (Fix compile + Add atoi / atol base)

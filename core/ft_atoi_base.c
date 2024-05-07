@@ -5,6 +5,7 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
+<<<<<<< HEAD
 /*   Created: 2024/05/14 20:46:50 by pepie             #+#    #+#             */
 /*   Updated: 2024/05/14 20:52:45 by pepie            ###   ########.fr       */
 /*                                                                            */
@@ -19,6 +20,10 @@
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 16:27:25 by pepie             #+#    #+#             */
 /*   Updated: 2023/09/13 19:08:05 by pepie            ###   ########.fr       */
+=======
+/*   Created: 2023/09/11 16:27:25 by pepie             #+#    #+#             */
+/*   Updated: 2024/05/07 11:58:52 by pepie            ###   ########.fr       */
+>>>>>>> 6dc9f48 (Fix compile + Add atoi / atol base)
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,3 +105,19 @@ int	ft_atoi_base(char*str, char*base)
 		num = num * -1;
 	return (num);
 }
+<<<<<<< HEAD
+=======
+
+/* int	main(void)
+{
+	printf("42:%d\n", ft_atoi_base("2a", "0123456789abcdef"));
+	printf("-42:%d\n", ft_atoi_base("   --------+-2a", "0123456789abcdef"));
+	printf("42:%d\n", ft_atoi_base("   -+-2a", "0123456789abcdef"));
+	printf("0:%d\n", ft_atoi_base("   --------+- 2a", "0123456789abcdef"));
+	printf("0:%d\n", ft_atoi_base("   --------+-z", "0123456789abcdef"));
+	printf("0:%d\n", ft_atoi_base("   --------+-2a", ""));
+	printf("0:%d\n", ft_atoi_base("   --------+-2a", "0"));
+	printf("0:%d\n", ft_atoi_base("   --------+-2a", "+-0"));
+	printf("0:%d\n", ft_atoi_base("   --------+-2a", "\t01"));
+} */
+>>>>>>> 6dc9f48 (Fix compile + Add atoi / atol base)
