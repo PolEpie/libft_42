@@ -6,7 +6,7 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 11:15:16 by pepie             #+#    #+#             */
-/*   Updated: 2024/05/01 11:05:48 by pepie            ###   ########.fr       */
+/*   Updated: 2024/05/10 12:53:13 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,8 @@ int				ft_tolower(int c);
 void			*ft_memchr(const void *s, int c, size_t n);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(const char *s, int c);
+
+char			*ft_strjoin(char const *s1, char const *s2);
 
 int				ft_memcmp(const void *pt1, const void *pt2, size_t size);
 

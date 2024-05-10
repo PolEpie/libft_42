@@ -12,6 +12,7 @@ SRC		= 	./core/ft_isalnum.c \
 			./core/ft_bzero.c \
 			./core/ft_memcpy.c \
 			./core/ft_memmove.c \
+			./core/ft_strcat.c \
 			./core/ft_strlcat.c \
 			./core/ft_strlcpy.c \
 			./core/ft_toupper.c \
@@ -31,7 +32,6 @@ SRC		= 	./core/ft_isalnum.c \
 			./core/ft_strdup.c \
 			./core/ft_strndup.c \
 			./core/ft_substr.c \
-			./core/ft_strjoin.c \
 			./core/ft_strtrim.c \
 			./core/ft_split.c \
 			./core/ft_itoa.c \
