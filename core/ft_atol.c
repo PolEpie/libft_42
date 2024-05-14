@@ -6,11 +6,11 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 18:49:16 by pepie             #+#    #+#             */
-/*   Updated: 2024/04/30 14:59:27 by pepie            ###   ########.fr       */
+/*   Updated: 2024/05/14 20:52:57 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libft_core.h"
 
 long	ft_atol(const char*str)
 {

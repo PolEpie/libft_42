@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: polepie <polepie@student.42.fr>            +#+  +:+       +#+        */
+/*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 18:49:16 by pepie             #+#    #+#             */
-/*   Updated: 2023/11/12 14:58:39 by polepie          ###   ########.fr       */
+/*   Updated: 2024/05/14 20:52:52 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libft_core.h"
 
 int	ft_str_is_num(char str)
 {

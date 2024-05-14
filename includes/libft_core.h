@@ -6,7 +6,7 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 11:15:16 by pepie             #+#    #+#             */
-/*   Updated: 2024/05/10 12:53:13 by pepie            ###   ########.fr       */
+/*   Updated: 2024/05/14 20:51:33 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,5 +88,8 @@ void			ft_lstdelone(t_list *lst, void (*del)(void *));
 void			ft_lstclear(t_list **lst, void (*del)(void *));
 void			ft_lstiter(t_list *lst, void (*f)(void *));
 t_list			*ft_lstmap(t_list *l, void *(*f)(void *), void (*del)(void *));
+
+int             ft_atoi_base(char *str, char *base);
+long            ft_atol_base(char *str, char *base);
 
 #endif

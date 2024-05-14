@@ -49,7 +49,9 @@ SRC		= 	./core/ft_isalnum.c \
 			./core/ft_lstdelone_bonus.c \
 			./core/ft_lstclear_bonus.c \
 			./core/ft_lstiter_bonus.c \
-			./core/ft_lstmap_bonus.c
+			./core/ft_lstmap_bonus.c \
+			./core/ft_atoi_base.c \
+			./core/ft_atol_base.c
 OBJS	= ${SRC:.c=.o}
 HEAD	= ./includes/
 AR		= ar rcs
