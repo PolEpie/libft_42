@@ -1,5 +1,5 @@
 CC		= cc
-CFLAGS	= -Wall -Wextra -Werror -fPIE
+CFLAGS	= -Wall -Wextra -Werror 
 DIR		= srcs/
 NAME	= libft.a
 SRC		= 	./core/ft_isalnum.c \

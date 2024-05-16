@@ -26,4 +26,8 @@ clean:
 fclean: clean
 		rm -f ${NAME}
 
+test: ${NAME}
+		${CC} ${CFLAGS} -I ${HEAD} main.c -L -lgnl -L -lft_core ${NAME} -o test
+		./test
+
 re: fclean all
