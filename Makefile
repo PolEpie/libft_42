@@ -1,10 +1,5 @@
-<<<<<<< Updated upstream
 CC		= cc
 CFLAGS	= -Wall -Wextra -Werror 
-=======
-CC		= gcc
-CFLAGS	= -Wall -Wextra -Werror
->>>>>>> Stashed changes
 DIR		= srcs/
 NAME	= libft.a
 SRC		= 	./core/ft_isalnum.c \
@@ -80,10 +75,14 @@ printf: ${CORE}
 gnl: ${CORE}
 		make -C ./get_next_line all
 
-${NAME}: ${OBJS} core printf gnl
+hashtable: ${CORE}
+		make -C ./hashtable all
+
+${NAME}: ${OBJS} core printf gnl hashtable
 		ar x ./libft_core.a
 		ar x ./get_next_line/libgnl.a
 		ar x ./printf/libftprintf.a
+		ar x ./hashtable/libhashtable.a
 		${AR} ${NAME} *.o
 		rm -f *.o
 
@@ -94,10 +93,12 @@ clean:
 		rm -f ${OBJS} ${CORE} *.o
 		make -C ./printf clean
 		make -C ./get_next_line clean
+		make -C ./hashtable clean
 
 fclean: clean
 		rm -f ${NAME}
 		make -C ./printf fclean
 		make -C ./get_next_line fclean
+		make -C ./hashtable fclean
 
 re: fclean all

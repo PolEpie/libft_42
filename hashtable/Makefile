@@ -1,8 +1,9 @@
 CC			= cc
 CFLAGS		= -Wall -Wextra -Werror
 DIR			= srcs/
-NAME		= hashtable.a
-SRC			= 	./hashtable.c
+NAME		= libhashtable.a
+SRC			= 	./hashtable.c \
+				./hashtable_2.c
 OBJS		= ${SRC:.c=.o}
 HEAD		= ./includes/
 INCLUDE_LIBFT = ./../includes/
