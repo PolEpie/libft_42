@@ -1,5 +1,10 @@
+<<<<<<< Updated upstream
 CC		= cc
 CFLAGS	= -Wall -Wextra -Werror 
+=======
+CC		= gcc
+CFLAGS	= -Wall -Wextra -Werror
+>>>>>>> Stashed changes
 DIR		= srcs/
 NAME	= libft.a
 SRC		= 	./core/ft_isalnum.c \
@@ -21,6 +26,7 @@ SRC		= 	./core/ft_isalnum.c \
 			./core/ft_strchr.c \
 			./core/ft_strrchr.c \
 			./core/ft_memcmp.c \
+			./core/ft_strcmp.c \
 			./core/ft_strncmp.c \
 			./core/ft_strnstr.c \
 			./core/ft_atoi.c \

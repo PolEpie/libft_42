@@ -17,7 +17,9 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <limits.h>
-# include <limits.h>
+# include <stdbool.h>
+# include <stdint.h>
+# include <stdio.h>
 
 typedef struct s_list {
 	void			*content;
@@ -50,6 +52,7 @@ char			*ft_strjoin(char const *s1, char const *s2);
 
 int				ft_memcmp(const void *pt1, const void *pt2, size_t size);
 
+unsigned int	ft_strcmp(char*s1, char*s2);
 unsigned int	ft_strncmp(char *s1, char *s2, unsigned int n);
 char			*ft_strnstr(char *str, char *to_find, size_t len);
 int				ft_atoi(const char *str);
