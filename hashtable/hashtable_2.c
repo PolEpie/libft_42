@@ -6,13 +6,13 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 01:13:47 by pepie             #+#    #+#             */
-/*   Updated: 2024/05/18 01:13:47 by pepie            ###   ########.fr       */
+/*   Updated: 2024/05/22 15:36:32 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "hashtable.h"
 
-static size_t	hashtable_index(t_hashtable *ht, char *key, size_t size)
+static size_t	hashtable_index(t_ht *ht, char *key, size_t size)
 {
 	size_t	hashed_key;
 
@@ -20,7 +20,7 @@ static size_t	hashtable_index(t_hashtable *ht, char *key, size_t size)
 	return (hashed_key);
 }
 
-bool	hashtable_insert(t_hashtable *ht, char *key, void *value)
+bool	hashtable_insert(t_ht *ht, char *key, void *value)
 {
 	t_entry		*entry;
 	size_t		index;
@@ -42,7 +42,7 @@ bool	hashtable_insert(t_hashtable *ht, char *key, void *value)
 	return (true);
 }
 
-void	*hashtable_search(t_hashtable *ht, char *key)
+void	*hashtable_search(t_ht *ht, char *key)
 {
 	t_entry		*entry;
 	size_t		index;
@@ -60,7 +60,7 @@ void	*hashtable_search(t_hashtable *ht, char *key)
 	return (NULL);
 }
 
-void	hashtable_delete(t_hashtable *ht, char *key)
+void	hashtable_delete(t_ht *ht, char *key)
 {
 	t_entry		*entry;
 	t_entry		*prev;

@@ -6,7 +6,7 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 00:07:37 by pepie             #+#    #+#             */
-/*   Updated: 2024/05/18 00:07:37 by pepie            ###   ########.fr       */
+/*   Updated: 2024/05/22 15:36:20 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,11 @@ uint64_t	hash(char *name, size_t size)
 	return (hash);
 }
 
-t_hashtable	*hashtable_create(uint32_t size)
+t_ht	*hashtable_create(uint32_t size)
 {
-	t_hashtable	*ht;
+	t_ht	*ht;
 
-	ht = malloc(sizeof(t_hashtable));
+	ht = malloc(sizeof(t_ht));
 	if (!ht)
 		return (NULL);
 	ht->size = size;
@@ -41,7 +41,7 @@ t_hashtable	*hashtable_create(uint32_t size)
 	return (ht);
 }
 
-void	hashtable_destroy(t_hashtable *ht)
+void	hashtable_destroy(t_ht *ht)
 {
 	uint32_t	i;
 	t_entry		*entry;
@@ -64,7 +64,7 @@ void	hashtable_destroy(t_hashtable *ht)
 	free(ht);
 }
 
-void	hashtable_print(t_hashtable *ht)
+void	hashtable_print(t_ht *ht)
 {
 	uint32_t	i;
 	t_entry		*entry;

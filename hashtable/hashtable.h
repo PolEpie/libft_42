@@ -6,7 +6,7 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 00:09:18 by pepie             #+#    #+#             */
-/*   Updated: 2024/05/18 00:09:18 by pepie            ###   ########.fr       */
+/*   Updated: 2024/05/22 15:36:44 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,12 +30,12 @@ typedef struct s_hashtable {
 	size_t			size;
 	t_hashfunction	hash;
 	t_entry			**elements;
-}	t_hashtable;
+}	t_ht;
 
-t_hashtable		*hashtable_create(uint32_t size);
-void			hashtable_destroy(t_hashtable *hashtable);
-bool			hashtable_insert(t_hashtable *hashtable, char *key, void *v);
-void			*hashtable_search(t_hashtable *hashtable, char *key);
-void			hashtable_delete(t_hashtable *hashtable, char *key);
+t_ht		*hashtable_create(uint32_t size);
+void		hashtable_destroy(t_ht *hashtable);
+bool		hashtable_insert(t_ht *hashtable, char *key, void *v);
+void		*hashtable_search(t_ht *hashtable, char *key);
+void		hashtable_delete(t_ht *hashtable, char *key);
 
 #endif
