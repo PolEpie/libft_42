@@ -6,7 +6,7 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 14:42:39 by pepie             #+#    #+#             */
-/*   Updated: 2024/05/07 15:42:22 by pepie            ###   ########.fr       */
+/*   Updated: 2024/05/22 16:58:25 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,8 @@ char	*get_next_line(int fd);
 
 void	ft_lstadd_back_gnl(t_list **lst, char *n);
 int		ft_strlen(char *str);
+char	*ft_strndup(const char *src, int n);
 int		ft_lstiter(void *lst, int (*f)(char *), bool type);
-char	*ft_strndup(char *src, int nb);
 char	*ft_freeman(t_gnl *gnl, char *ret);
 
 #endif

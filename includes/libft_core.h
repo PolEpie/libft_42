@@ -6,7 +6,7 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 11:15:16 by pepie             #+#    #+#             */
-/*   Updated: 2024/05/16 14:45:44 by pepie            ###   ########.fr       */
+/*   Updated: 2024/05/22 16:57:48 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,7 @@ int				ft_math_abs(int num);
 
 void			*ft_calloc(size_t nitems, size_t size);
 char			*ft_strdup(const char *src);
+char			*ft_strndup(const char *src, int n);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 
 char			*ft_strjoin(char const *s1, char const *s2);

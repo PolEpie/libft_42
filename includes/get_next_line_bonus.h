@@ -6,7 +6,7 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 14:42:39 by pepie             #+#    #+#             */
-/*   Updated: 2023/12/15 13:40:58 by pepie            ###   ########.fr       */
+/*   Updated: 2024/05/22 16:54:03 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,6 @@ char	*get_next_line(int fd);
 
 void	ft_lstadd_back_create(t_list **lst, char *n);
 int		ft_lstiter_sum(void *lst, int (*f)(char *));
-char	*ft_strndup(char *src, int nb);
 char	*ft_freeman(t_gnl *gnl, char *ret);
 int		init_gnl(t_gnl *gnl);
 
