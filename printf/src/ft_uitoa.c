@@ -6,7 +6,7 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 11:39:08 by pepie             #+#    #+#             */
-/*   Updated: 2023/11/17 12:34:45 by pepie            ###   ########.fr       */
+/*   Updated: 2024/05/23 02:50:34 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,26 +25,6 @@ int	get_uitoa_len(int n)
 		nbr /= 10;
 	}
 	return (len + 1);
-}
-
-static char	*ft_strcat(char*dest, const char*src)
-{
-	int	i_dest;
-	int	i_src;
-
-	i_dest = 0;
-	i_src = 0;
-	while (dest[i_dest] != '\0')
-	{
-		i_dest++;
-	}
-	while (src[i_src] != '\0')
-	{
-		dest[i_dest + i_src] = src[i_src];
-		i_src++;
-	}
-	dest[i_dest + i_src] = '\0';
-	return (dest);
 }
 
 void	ft_uitoa_recur(int n, char *str)

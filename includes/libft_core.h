@@ -6,7 +6,7 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 11:15:16 by pepie             #+#    #+#             */
-/*   Updated: 2024/05/22 16:57:48 by pepie            ###   ########.fr       */
+/*   Updated: 2024/05/23 03:14:29 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,8 @@ void			*ft_memmove(void *dest, const void *src, size_t n);
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int nb);
-int				ft_toupper(int c);
+char     *ft_strcat(char *dest, const char *src);
+int             ft_toupper(int c);
 int				ft_tolower(int c);
 
 void			*ft_memchr(const void *s, int c, size_t n);
@@ -49,6 +50,7 @@ char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(const char *s, int c);
 
 char			*ft_strjoin(char const *s1, char const *s2);
+char            *ft_strjoin_free(char *s1, char const *s2);
 
 int				ft_memcmp(const void *pt1, const void *pt2, size_t size);
 
@@ -67,7 +69,6 @@ char			*ft_strdup(const char *src);
 char			*ft_strndup(const char *src, int n);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 
-char			*ft_strjoin(char const *s1, char const *s2);
 char			*ft_strtrim(char const *s1, char const *set);
 char			**ft_split(char const *str, char c);
 void			ft_freesplit(char **split);
