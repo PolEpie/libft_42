@@ -6,7 +6,7 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 12:48:44 by pepie             #+#    #+#             */
-/*   Updated: 2024/05/23 03:14:23 by pepie            ###   ########.fr       */
+/*   Updated: 2024/05/24 11:12:19 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,6 @@ char	*ft_strjoin_free(char *s1, char const *s2)
 	(*resp) = 0;
 	resp = ft_strcat(resp, s1);
 	resp = ft_strcat(resp, s2);
-    free(s1);
-    return (resp);
+	free(s1);
+	return (resp);
 }

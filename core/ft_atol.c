@@ -6,7 +6,7 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 18:49:16 by pepie             #+#    #+#             */
-/*   Updated: 2024/05/14 20:52:57 by pepie            ###   ########.fr       */
+/*   Updated: 2024/05/24 11:12:40 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ long	ft_atol(const char*str)
 	num = 0;
 	minus_count = 0;
 	while (ft_str_is_whitespace(*str))
-	str++;
+		str++;
 	if (*str == '-' || *str == '+')
 	{
 		if (*str == '-')
