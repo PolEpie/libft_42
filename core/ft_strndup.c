@@ -6,7 +6,7 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 13:50:07 by pepie             #+#    #+#             */
-/*   Updated: 2024/05/23 03:18:14 by pepie            ###   ########.fr       */
+/*   Updated: 2024/09/24 13:16:11 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,26 @@ char	*ft_strndup(const char *src, int nb)
 {
 	char	*dest;
 	int		i;
+	int		size;
 
 	i = 0;
+	if (nb < 0)
+		return (NULL);
+	size = ft_strlen((char *)src);
+	if (size < nb)
+		nb = size;
 	dest = malloc(sizeof(char) * (nb + 1));
 	if (!dest)
 		return (NULL);
-	while (src[i] && i < nb)
+	while (i < nb)
 	{
-		dest[i] = src[i];
+		if (src[i])
+			dest[i] = src[i];
+		else
+		{
+			dest[i] = '\0';
+			break ;
+		}
 		i++;
 	}
 	dest[i] = '\0';

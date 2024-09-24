@@ -6,7 +6,7 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 00:07:37 by pepie             #+#    #+#             */
-/*   Updated: 2024/05/22 15:36:20 by pepie            ###   ########.fr       */
+/*   Updated: 2024/09/24 12:12:20 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,8 @@ void	hashtable_destroy(t_ht *ht)
 		{
 			next = entry->next;
 			free(entry->key);
+			if (entry->value)
+				free(entry->value);
 			free(entry);
 			entry = next;
 		}

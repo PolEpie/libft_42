@@ -6,7 +6,7 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 13:50:07 by pepie             #+#    #+#             */
-/*   Updated: 2024/05/23 03:18:08 by pepie            ###   ########.fr       */
+/*   Updated: 2024/09/24 12:28:56 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,20 @@
 
 char	*ft_strdup(const char *src)
 {
+	int		len;
 	int		i;
 	char	*retun;
 
-	i = ft_strlen((char *)src) + 1;
-	retun = malloc(sizeof(char) * i);
+	len = ft_strlen((char *)src) + 1;
+	retun = malloc(sizeof(char) * len);
 	if (!retun)
 		return (NULL);
-	while (i >= 0)
+	retun[len - 1] = '\0';
+	i = 0;
+	while (src[i] && i < len)
 	{
 		retun[i] = src[i];
-		i--;
+		i++;
 	}
 	return (retun);
 }
