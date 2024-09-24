@@ -6,7 +6,7 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 13:50:07 by pepie             #+#    #+#             */
-/*   Updated: 2024/09/24 13:16:11 by pepie            ###   ########.fr       */
+/*   Updated: 2024/09/24 13:59:07 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,6 @@ char	*ft_strndup(const char *src, int nb)
 	{
 		if (src[i])
 			dest[i] = src[i];
-		else
-		{
-			dest[i] = '\0';
-			break ;
-		}
 		i++;
 	}
 	dest[i] = '\0';
