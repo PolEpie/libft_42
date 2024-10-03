@@ -6,7 +6,7 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 00:07:37 by pepie             #+#    #+#             */
-/*   Updated: 2024/09/24 12:12:20 by pepie            ###   ########.fr       */
+/*   Updated: 2024/10/03 11:38:44 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,22 +71,22 @@ void	hashtable_print(t_ht *ht)
 	uint32_t	i;
 	t_entry		*entry;
 
-	printf("Hashtable:\n");
+	ft_printf("Hashtable:\n");
 	i = 0;
 	while (i < ht->size)
 	{
 		entry = ht->elements[i];
 		if (entry)
 		{
-			printf("\t%i\t--\n", i);
+			ft_printf("\t%i\t--\n", i);
 			while (entry)
 			{
-				printf("\t\t(%s)\t-> %p\n", entry->key, entry->value);
+				ft_printf("\t\t(%s)\t-> %p\n", entry->key, entry->value);
 				entry = entry->next;
 			}
 		}
 		else
-			printf("\t%i\tNULL\n", i);
+			ft_printf("\t%i\tNULL\n", i);
 		i++;
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 14:44:05 by pepie             #+#    #+#             */
-/*   Updated: 2024/05/07 15:15:17 by pepie            ###   ########.fr       */
+/*   Updated: 2024/10/03 11:38:53 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -144,7 +144,7 @@ char	*get_next_line(int fd)
 	for (int i = 0; i < 20; i++)
 	{
 		line = get_next_line(fd);
-		printf("%s", line);
+		ft_printf("%s", line);
 		free(line);
 	}
 	return (0);
