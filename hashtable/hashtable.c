@@ -6,10 +6,11 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 00:07:37 by pepie             #+#    #+#             */
-/*   Updated: 2024/10/03 11:38:44 by pepie            ###   ########.fr       */
+/*   Updated: 2024/10/03 11:40:46 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include "hashtable.h"
 
 uint64_t	hash(char *name, size_t size)
