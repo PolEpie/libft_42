@@ -6,7 +6,7 @@
 /*   By: pepie <pepie@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 11:15:16 by pepie             #+#    #+#             */
-/*   Updated: 2024/05/24 11:15:44 by pepie            ###   ########.fr       */
+/*   Updated: 2024/10/16 13:22:51 by pepie            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int nb);
 char			*ft_strcat(char *dest, const char *src);
 int				ft_toupper(int c);
 int				ft_tolower(int c);
+void			ft_strtolower(char *str);
 
 void			*ft_memchr(const void *s, int c, size_t n);
 char			*ft_strchr(const char *s, int c);
