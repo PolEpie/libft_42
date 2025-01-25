@@ -45,6 +45,7 @@ char			*ft_strcat(char *dest, const char *src);
 int				ft_toupper(int c);
 int				ft_tolower(int c);
 void			ft_strtolower(char *str);
+void			ft_strtoupper(char *str);
 
 void			*ft_memchr(const void *s, int c, size_t n);
 char			*ft_strchr(const char *s, int c);
