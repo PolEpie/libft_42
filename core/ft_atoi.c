@@ -30,7 +30,6 @@ int	ft_atoi(const char*str)
 	num = 0;
 	minus_count = 0;
 	while (ft_str_is_whitespace(*str))
-
 		str++;
 	if (*str == '-' || *str == '+')
 	{
