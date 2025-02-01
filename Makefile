@@ -36,6 +36,7 @@ SRC		= 	./core/ft_isalnum.c \
 			./core/ft_strtrim.c \
 			./core/ft_split.c \
 			./core/ft_itoa.c \
+			./core/ft_ltoa.c \
 			./core/ft_strmapi.c \
 			./core/ft_striteri.c \
 			./core/ft_putchar_fd.c \
