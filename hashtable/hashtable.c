@@ -39,6 +39,8 @@ t_ht	*hashtable_create(uint32_t size)
 	ht->size = size;
 	ht->hash = hash;
 	ht->elements = ft_calloc(sizeof(t_entry), size);
+	if (!ht->elements)
+		return (free(ht), NULL);
 	return (ht);
 }
 
