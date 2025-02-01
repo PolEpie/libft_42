@@ -61,6 +61,7 @@ unsigned int	ft_strncmp(char *s1, char *s2, unsigned int n);
 char			*ft_strnstr(char *str, char *to_find, size_t len);
 int				ft_atoi(const char *str);
 long			ft_atol(const char *str);
+char			*ft_ltoa(long n);
 
 int				ft_mathmin(int a, int b);
 int				ft_mathmax(int a, int b);
