@@ -23,7 +23,7 @@ char	*ft_strcat(char*dest, const char*src)
 	{
 		i_dest++;
 	}
-	while (src[i_src] != '\0')
+	while (src && src[i_src] != '\0')
 	{
 		dest[i_dest + i_src] = src[i_src];
 		i_src++;
@@ -37,7 +37,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*resp;
 	int		len;
 
-	if (!s1 || !s2)
+	if (!s1 && !s2)
 		return (NULL);
 	len = 0;
 	len += ft_strlen((char *)s1);
