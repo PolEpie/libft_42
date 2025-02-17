@@ -18,6 +18,8 @@ char	*ft_strdup(const char *src)
 	int		i;
 	char	*retun;
 
+	if (!src)
+		return (NULL);
 	len = ft_strlen((char *)src) + 1;
 	retun = malloc(sizeof(char) * len);
 	if (!retun)

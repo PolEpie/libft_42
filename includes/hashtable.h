@@ -15,7 +15,7 @@
 
 # include "libft_core.h"
 
-# define HASHTABLE_SIZE 256
+# define HASHTABLE_SIZE 512
 
 typedef struct s_entry {
 	char			*key;

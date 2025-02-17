@@ -37,6 +37,8 @@ void	init_str(char **elements, int elements_count, int len, char const *str)
 
 	i = 0;
 	elements[elements_count] = malloc(sizeof(char) * (len + 1));
+	if (!elements[elements_count])
+		return ;
 	element = elements[elements_count];
 	if (!element)
 		return ;
